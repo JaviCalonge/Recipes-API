@@ -29,6 +29,10 @@ body{
     margin-bottom: 1rem;
 }
 
+.enlace-home {
+    text-decoration: none;
+}
+
 .quote {
     font-weight: bolder;
     font-size: 1.6rem;
