@@ -275,6 +275,31 @@ body{
     width: 100%;
 }
 
+#footer {
+    display: flex;
+    justify-content: right;
+    padding: 100px;
+    
+}
+
+.btn-up {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--tenne-tawny);
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    margin-right: 300px;
+    margin-bottom: 100px;
+}
+
+.btn-up:hover {
+    background-color: var(--tenne-tawny-dark);
+}
+
 /* Media Queries */
 
 @media (max-width: 500px) {

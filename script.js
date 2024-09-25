@@ -2,6 +2,7 @@ const searchBtn = document.getElementById("search-btn")
 const mealList = document.getElementById("meal")
 const mealDetailsContent = document.querySelector(".meal-details-content")
 const recipeCloseBtn = document.getElementById("recipe-close-btn")
+const footerBtn = document.getElementById("footer")
 
 searchBtn.addEventListener("click", getMealList)
 mealList.addEventListener("click", getMealRecipe)
@@ -15,6 +16,7 @@ function getMealList () {
     .then(res => res.json())
     .then(data => {
       let html = ""
+      footerBtn.innerHTML = ""
       if(data.meals) {
         data.meals.forEach(meal => {
           html += `
@@ -26,8 +28,10 @@ function getMealList () {
               <h3>${meal.strMeal}</h3>
               <a href = "#" class = "recipe-btn">Get Recipe</a>
             </div>
-          </div>`
+          </div>
+          `
         })
+        footerBtn.innerHTML += `<a href="#home"><button class="btn-up">Get up</button></a>`
         mealList.classList.remove("notFound")
       } 
       else {
@@ -43,6 +47,7 @@ function getMealList () {
   }
 
 function getMealRecipe (e) {
+  
   e.preventDefault()
   if (e.target.classList.contains("recipe-btn")) {
     let mealItem = e.target.parentElement.parentElement
@@ -69,6 +74,7 @@ function mealRecipeModal (meal) {
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
           </div>
   `
+
   mealDetailsContent.innerHTML = html
   mealDetailsContent.parentElement.classList.add("showRecipe")
 }
