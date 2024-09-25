@@ -70,7 +70,7 @@ body{
 .meal-search-box{
     margin: 1.2rem 0;
     display: flex;
-    align-items: stretch;
+    justify-content: center;
 }
 
 .search-control,
@@ -301,13 +301,11 @@ body{
 /* Media Queries */
 
 @media (max-width: 500px) {
+    .meal-search-box{
+        
+    }
     .meal-search{
         margin: 0;
-    }
-    .meal-search-box{
-        margin: 1rem 0;
-        display: flex;
-        justify-content: center;
     }
     .meal-wrapper{
         margin: 0;
