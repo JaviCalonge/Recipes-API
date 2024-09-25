@@ -31,7 +31,7 @@ function getMealList () {
           </div>
           `
         })
-        footerBtn.innerHTML += `<a href="#home"><button class="btn-up">Get up</button></a>`
+        footerBtn.innerHTML += `<a href="#home"><button class="btn-up">Go up</button></a>`
         mealList.classList.remove("notFound")
       } 
       else {
