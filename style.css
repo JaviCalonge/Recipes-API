@@ -278,8 +278,7 @@ body{
 #footer {
     display: flex;
     justify-content: right;
-    padding: 100px;
-    
+    margin: 0;
 }
 
 .btn-up {
