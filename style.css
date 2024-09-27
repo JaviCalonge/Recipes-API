@@ -289,8 +289,11 @@ body{
     .meal-wrapper{
         padding: 0.3rem;
     }
+    .meal-details {
+        width: 90%;
+    }
     .meal-item {
-        margin: 10px;
+        margin: 30px;
     }
     .meal-search-box{
         width: 380px;
