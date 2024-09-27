@@ -156,7 +156,7 @@ body{
     transform: translate(-50%, -50%);
     background: var(--ligth-orange);
     border-radius: 1rem;
-    width: 90%;
+    width: 60%;
     height: 90%;
     overflow-y: scroll;
     display: none;
